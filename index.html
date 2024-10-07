@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body background="https://cdn.pixabay.com/photo/2023/01/10/03/57/digits-7708860_1280.jpg">
+    <div class="container">
+        <div class="glass"></div>
+        <h1 class="gamename"><b>Guess the Number</b></h1>
+        <p><b>Try to guess a number between 1 and 50</b></p>
+        <p><b>You have 10 attempts to guess the number</b></p></br>
+        
+        <form class="form">
+            <label for="guessfield" class="labelname"><b>Guess a number</b></label>
+            <input type="text" id="guessfield">
+            <input type="submit" class="submitguess" value="Submit guess" id="subt">
+        </form>
+
+        <div class="resultpara">
+            <p><b>Previous Guesses : </b><span id="guesses"></span></p>
+            <p><b>Attempts Left : </b><span id="attempts"><b>10</b></span></p>
+            <p class="hint"></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
